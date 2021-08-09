@@ -1,23 +1,11 @@
-$color: #00cc99;
+@import "variable";// 變數
+@import "reset";  // reset.css  
+@import "base"; // 全站設定
+@import "helper"; // 小幫手
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+// layout 共同框架,第一層
+@import "layout";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+// 頁面設計
+@import "pages_index";
+@import "pages_locations";

@@ -1,0 +1,70 @@
+.locations .container{
+  width: $width_l;
+  margin: 0 auto;
+  padding: 96px 0 160px 0;
+  text-align: left;
+
+  .title{
+    padding-left: 16px;
+    margin-bottom: 60px;
+    border-left: 8px solid #9F1213;
+  }
+
+  .search{
+    margin-bottom: 32px;
+    
+    label{
+      font-size: 24px;
+      margin-right: 22px;
+    }
+
+    select{
+      font-size: 18px;
+      width: 324px;
+    }
+  }
+
+  .result{
+    display: flex;
+  }
+
+  .shop{
+    width: 445px;
+    margin-right: 30px;
+   
+    .name{
+      border: 1px solid #00000020;
+      padding: 12px 0 12px 24px;
+      font-size: 24px;
+    }
+
+    .info{
+      font-size: $font_m;
+      padding: 16px 0 16px 26px;
+      border: 1px solid #00000020;
+
+      .tel i{
+        margin-right: 11px;
+        margin-bottom: 8px;
+      }
+
+      .time i{
+        margin-right: 10px;
+        margin-bottom: 8px;
+      }
+
+      .add i{
+        margin-right: 12.04px;
+        margin-left: 2px;
+      }
+    }
+  }
+
+  .map{
+    width: 635px;
+
+    img{
+      height: 487.153px;
+    }
+  }
+}

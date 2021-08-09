@@ -1,0 +1,242 @@
+/*用專業的心，做專業的事*/
+.about{
+  background-color: $second_c;
+}
+.about .container{
+  padding: 60px 0 80px 0;
+
+  .title{
+    margin-bottom: 40px;
+    color: $first_c;
+  }
+  .features{
+    display: flex;
+    justify-content: center;
+
+    .price,
+    .time,
+    .afterService{
+      margin-right: 30px;
+    }
+
+    .icon{
+      width: 83.3px; 
+      height: 83.3px; 
+      margin: 0 auto 27.4px auto;
+    }
+
+    .subtitle{
+      margin-bottom: 8px; 
+      color: $fourth_c; 
+      font-size: 24px;
+    }
+
+    .text{
+      text-align: left;
+    }
+  }
+}
+
+/*經典系列鏡框*/
+.classicFrame .container{
+  padding: 60px 0 80px 0;
+
+  .title{
+    margin-bottom: 40px;
+    color: $fourth_c; 
+  }
+
+  .optical,
+  .sunglasses,
+  .functional{
+    display: flex;
+  }
+
+  .sunglasses{
+    flex-direction: row-reverse; 
+    align-items: center; 
+    margin: 30px 0;
+  }
+
+  .optical .picture,
+  .functional .picture{
+    width: 635px;
+    margin-right: 30px;
+  }
+
+  .sunglasses .picture{
+    width: 635px;
+    margin-left: 30px;
+  }
+
+  .subtitle{
+    display: flex; 
+    align-items: center;
+    color: $fourth_c;
+  }
+
+  .icon{
+    width: 44px;
+    margin-right: 10px;
+  }
+
+  .text{
+    font-size: $font_xl;
+  }
+}
+
+/*聯名設計鏡框*/
+.co_brandingFrame{
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -420px;
+  height: 646px;
+  padding-top: 60px;
+
+  .title{
+    margin-bottom: 40px;
+    color: white;
+  }
+
+  .category{
+    display: flex;
+  }
+
+  .category a{
+    width: $width_xl; 
+    height: 100%; 
+    background-color: rgba(255, 255, 255, .5); 
+    display: block; 
+    font-size: 72px; 
+    color: $first_c; 
+    line-height: 455px;
+  }
+
+  .double_A{
+    width: 540px; 
+    height: 455px; 
+    margin-right: 30px; 
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+  .youth{
+    width: 540px; 
+    height: 455px; 
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+}
+
+/*顧客推薦*/
+.recommend .container{
+  padding: 60px 0 80px 0;
+
+  .title{
+    margin-bottom: 40px;
+    color: $fourth_c;
+  }
+
+  .persons{
+    display: flex; 
+    justify-content: center;
+
+    li{
+      width: 255px;
+      
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3){
+        margin-right: 30px;
+      }
+
+      &:nth-child(1) .text,
+      &:nth-child(4) .text{
+        margin-bottom: 76px;
+      }
+
+      &:nth-child(2) .text,
+      &:nth-child(3) .text{
+        margin-bottom: 52px;
+      }
+    }
+  }
+
+  .comment{
+    border-left: 1px solid #DEE2E6;
+    border-right: 1px solid #DEE2E6;
+    border-bottom: 1px solid #DEE2E6;
+    padding: 16px;
+    text-align: left;
+  }
+
+  .name{
+    margin-bottom: 8px;
+  }
+}
+
+/*聯絡我們*/
+.contact{
+  background-color: #0c0a090d;
+}
+.contact .container{
+  width: 730px;
+  padding: 60px 0 96px 0;
+
+  .text{
+    margin-bottom: 20px; 
+    text-align: left;
+  }
+
+  .title{
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  form{
+    text-align: left; 
+    display: flex; 
+    flex-direction: column;
+
+    .name_textArea,
+    .tel_textArea,
+    .email_textArea,
+    .advise_textArea{
+      margin-bottom: 16px;
+    }
+
+    .name_textArea input,
+    .tel_textArea input,
+    .email_textArea input{
+      margin-top: 4px;
+      width: 100%; 
+      padding: 12px 0 14px 16px; 
+      border: 1px solid;
+    }
+
+    .advise_textArea textarea{
+      margin-top: 4px;
+      width: 100%; 
+      padding: 12px 0 0 16px; 
+      height: 124px; 
+      border: 1px solid black;
+    }
+
+    .privacyCheck{
+      margin-right: 4px;
+    }
+
+    .submitBtn{
+      width:350px; 
+      padding: 16px 0; 
+      background-color: $first_c; 
+      color: #ffffff; 
+      margin: 0 auto; 
+      border: 1px solid black;
+    }
+  }
+}
+

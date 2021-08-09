@@ -1,0 +1,116 @@
+/* 全域 */
+.container{
+  width: $width_l;
+  margin: 0 auto;
+  text-align: center;
+}
+.title{
+  font-size: $font_xl;
+}
+
+header{
+  background-color: #AA0601;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 88px;
+}
+
+header .logo{
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 48.57px;
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu{
+  display: flex;
+  li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3){
+    margin-right: 64px;
+  }
+  a{
+    font-size: $font_m;
+    color: $third_c;
+    display: block;
+  }
+}
+
+
+footer{
+  background-color: $first_c;
+}
+
+footer .container{
+  padding: 44px 0 39px 0;
+  width: $width_l;
+  margin: 0 auto;
+}
+
+footer .footerNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $width_xl;
+  margin-bottom: 36px;
+  .menu{
+    display: flex;
+    li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(3),
+    li:nth-child(4){
+      margin-right: 48px;
+    }
+    a{
+      color: $third_c;
+    }
+  }
+  .socialMedia{
+    display: flex;
+    li:nth-child(2){
+      margin: 0 32px;
+    }
+  }
+}
+
+footer .contactMethod{
+  margin-bottom: 40px;
+  .tel,
+  .mail{
+    display: flex; 
+    margin-bottom: 16px; 
+    align-items: center;
+    a{
+      color: $third_c; 
+      font-size: $font_l; 
+      margin-left: 22px;
+    }
+  }
+}
+
+footer .copyright{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  .text{
+    color: $third_c;
+  }
+  ul{
+    display: flex;
+    .privacy{
+      margin-right: 48px;
+    }
+    a{
+      color: $third_c;  
+    }
+  }
+}
