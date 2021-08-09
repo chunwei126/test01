@@ -1,23 +1,433 @@
-.header {
-  height: 200px;
-  background-color: #00cc99; }
+@charset "UTF-8";
+/* 容器寬度 */
+/* 文字大小 */
+/* 顏色 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+/*h1圖片取代文字*/
+.text_hidden {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+/* 全域 */
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  text-align: center; }
+
+.title {
+  font-size: 48px; }
+
+header {
+  background-color: #AA0601;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 88px; }
+
+header .logo {
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 48.57px;
+  cursor: pointer; }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  nav .menu li:nth-child(1),
+  nav .menu li:nth-child(2),
+  nav .menu li:nth-child(3) {
+    margin-right: 64px; }
+  nav .menu a {
+    font-size: 20px;
+    color: white;
+    display: block; }
+
+footer {
+  background-color: #AA0601; }
+
+footer .container {
+  padding: 44px 0 39px 0;
+  width: 1110px;
+  margin: 0 auto; }
+
+footer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 36px; }
+  footer .footerNav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .footerNav .menu li:nth-child(1),
+    footer .footerNav .menu li:nth-child(2),
+    footer .footerNav .menu li:nth-child(3),
+    footer .footerNav .menu li:nth-child(4) {
+      margin-right: 48px; }
+    footer .footerNav .menu a {
+      color: white; }
+  footer .footerNav .socialMedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .footerNav .socialMedia li:nth-child(2) {
+      margin: 0 32px; }
+
+footer .contactMethod {
+  margin-bottom: 40px; }
+  footer .contactMethod .tel,
+  footer .contactMethod .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    footer .contactMethod .tel a,
+    footer .contactMethod .mail a {
+      color: white;
+      font-size: 36px;
+      margin-left: 22px; }
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  footer .copyright .text {
+    color: white; }
+  footer .copyright ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .copyright ul .privacy {
+      margin-right: 48px; }
+    footer .copyright ul a {
+      color: white; }
+
+/*用專業的心，做專業的事*/
+.about {
+  background-color: #AA06010D; }
+
+.about .container {
+  padding: 60px 0 80px 0; }
+  .about .container .title {
+    margin-bottom: 40px;
+    color: #AA0601; }
+  .about .container .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .about .container .features .price,
+    .about .container .features .time,
+    .about .container .features .afterService {
+      margin-right: 30px; }
+    .about .container .features .icon {
+      width: 83.3px;
+      height: 83.3px;
+      margin: 0 auto 27.4px auto; }
+    .about .container .features .subtitle {
+      margin-bottom: 8px;
+      color: #650300;
+      font-size: 24px; }
+    .about .container .features .text {
+      text-align: left; }
+
+/*經典系列鏡框*/
+.classicFrame .container {
+  padding: 60px 0 80px 0; }
+  .classicFrame .container .title {
+    margin-bottom: 40px;
+    color: #650300; }
+  .classicFrame .container .optical,
+  .classicFrame .container .sunglasses,
+  .classicFrame .container .functional {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .classicFrame .container .sunglasses {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px 0; }
+  .classicFrame .container .optical .picture,
+  .classicFrame .container .functional .picture {
+    width: 635px;
+    margin-right: 30px; }
+  .classicFrame .container .sunglasses .picture {
+    width: 635px;
+    margin-left: 30px; }
+  .classicFrame .container .subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #650300; }
+  .classicFrame .container .icon {
+    width: 44px;
+    margin-right: 10px; }
+  .classicFrame .container .text {
+    font-size: 48px; }
+
+/*聯名設計鏡框*/
+.co_brandingFrame {
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -420px;
+  height: 646px;
+  padding-top: 60px; }
+  .co_brandingFrame .title {
+    margin-bottom: 40px;
+    color: white; }
+  .co_brandingFrame .category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .co_brandingFrame .category a {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    font-size: 72px;
+    color: #AA0601;
+    line-height: 455px; }
+  .co_brandingFrame .double_A {
+    width: 540px;
+    height: 455px;
+    margin-right: 30px;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .co_brandingFrame .youth {
+    width: 540px;
+    height: 455px;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+/*顧客推薦*/
+.recommend .container {
+  padding: 60px 0 80px 0; }
+  .recommend .container .title {
+    margin-bottom: 40px;
+    color: #650300; }
+  .recommend .container .persons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .recommend .container .persons li {
+      width: 255px; }
+      .recommend .container .persons li:nth-child(1), .recommend .container .persons li:nth-child(2), .recommend .container .persons li:nth-child(3) {
+        margin-right: 30px; }
+      .recommend .container .persons li:nth-child(1) .text,
+      .recommend .container .persons li:nth-child(4) .text {
+        margin-bottom: 76px; }
+      .recommend .container .persons li:nth-child(2) .text,
+      .recommend .container .persons li:nth-child(3) .text {
+        margin-bottom: 52px; }
+  .recommend .container .comment {
+    border-left: 1px solid #DEE2E6;
+    border-right: 1px solid #DEE2E6;
+    border-bottom: 1px solid #DEE2E6;
+    padding: 16px;
+    text-align: left; }
+  .recommend .container .name {
+    margin-bottom: 8px; }
+
+/*聯絡我們*/
+.contact {
+  background-color: #0c0a090d; }
+
+.contact .container {
+  width: 730px;
+  padding: 60px 0 96px 0; }
+  .contact .container .text {
+    margin-bottom: 20px;
+    text-align: left; }
+  .contact .container .title {
+    margin-bottom: 24px;
+    text-align: center; }
+  .contact .container form {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .contact .container form .name_textArea,
+    .contact .container form .tel_textArea,
+    .contact .container form .email_textArea,
+    .contact .container form .advise_textArea {
+      margin-bottom: 16px; }
+    .contact .container form .name_textArea input,
+    .contact .container form .tel_textArea input,
+    .contact .container form .email_textArea input {
+      margin-top: 4px;
+      width: 100%;
+      padding: 12px 0 14px 16px;
+      border: 1px solid; }
+    .contact .container form .advise_textArea textarea {
+      margin-top: 4px;
+      width: 100%;
+      padding: 12px 0 0 16px;
+      height: 124px;
+      border: 1px solid black; }
+    .contact .container form .privacyCheck {
+      margin-right: 4px; }
+    .contact .container form .submitBtn {
+      width: 350px;
+      padding: 16px 0;
+      background-color: #AA0601;
+      color: #ffffff;
+      margin: 0 auto;
+      border: 1px solid black; }
+
+.locations .container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 96px 0 160px 0;
+  text-align: left; }
+  .locations .container .title {
+    padding-left: 16px;
+    margin-bottom: 60px;
+    border-left: 8px solid #9F1213; }
+  .locations .container .search {
+    margin-bottom: 32px; }
+    .locations .container .search label {
+      font-size: 24px;
+      margin-right: 22px; }
+    .locations .container .search select {
+      font-size: 18px;
+      width: 324px; }
+  .locations .container .result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .locations .container .shop {
+    width: 445px;
+    margin-right: 30px; }
+    .locations .container .shop .name {
+      border: 1px solid #00000020;
+      padding: 12px 0 12px 24px;
+      font-size: 24px; }
+    .locations .container .shop .info {
+      font-size: 20px;
+      padding: 16px 0 16px 26px;
+      border: 1px solid #00000020; }
+      .locations .container .shop .info .tel i {
+        margin-right: 11px;
+        margin-bottom: 8px; }
+      .locations .container .shop .info .time i {
+        margin-right: 10px;
+        margin-bottom: 8px; }
+      .locations .container .shop .info .add i {
+        margin-right: 12.04px;
+        margin-left: 2px; }
+  .locations .container .map {
+    width: 635px; }
+    .locations .container .map img {
+      height: 487.153px; }
 
 /*# sourceMappingURL=all.css.map */
